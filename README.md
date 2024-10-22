@@ -16,3 +16,10 @@ During training, we used the large model hyena for DNA embedding. To get the emb
 
 Hyena paper are accessed at:[Hyena Hierarchy:
  Towards Larger Convolutional Language Models](https://arxiv.org/pdf/2302.10866)
+
+### 2.2 Gene TPMs data and Gene read counts data
+The data we downloaded from [GTEx Portal](https://www.gtexportal.org/home/)
+
+More specifically, we downloaded EBV-transformed lymphocytes from [GTEx Portal Downloads](https://www.gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression)
+
+## 3.Final result
