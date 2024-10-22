@@ -68,4 +68,19 @@ using Gene TPMs as extra feature, please run:
 ```
 python CNNWithTPMPred.py
 ```
+### 3.5 using ready-made trained models
+If you don't train, we also provide ready-made trained models, just load the model and use it!
+To use the model, please run(use CNN model as example):
+```python
+python
+
+# Define the model before using it (the CNNPred.py file has the model architecture)
+
+model =  CNNBinaryClassifier()
+
+model.load_state_dict(torch.load('model/CNNPred.pth')
+
+model.eval()
+>>> 
+```
 ## 4. Final results
