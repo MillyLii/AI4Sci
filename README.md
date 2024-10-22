@@ -40,4 +40,29 @@ The data we downloaded from [GTEx Portal](https://www.gtexportal.org/home/)
 
 More specifically, we are downloading data related to EBV-transformed lymphocytes  from [GTEx Portal Downloads](https://www.gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression)
 
-## 3.Final result
+## 3.Training
+### 3.1 Train a predictive model using CNN
+To train a CNN-based predictive model, please run:
+```
+python CNNPred.py
+```
+### 3.2 Train a predictive model using LSTM
+To train a LSTM-based predictive model, please run:
+```
+python LSTMPred.py
+```
+### 3.3 Train a predictive model using AutoEncoder and XGBoost
+To train AE-XGB-based predictive model, please run:
+```
+python AEXGBPred.py
+```
+### 3.4 Train a predictive model using extra features
+using Gene read counts as extra feature, please run:
+```
+python CNNWithReadCountsPred.py
+```
+
+using Gene TPMs as extra feature, please run:
+```
+python CNNWithTPMPred.py
+```
