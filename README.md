@@ -61,6 +61,7 @@ using Gene read counts as extra feature, please run:
 ```
 python CNNWithReadCountsPred.py
 ```
+## 4. Final results
 
 using Gene TPMs as extra feature, please run:
 ```
