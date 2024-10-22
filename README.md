@@ -85,11 +85,11 @@ python
 
 # Define the model before using it (the CNNPred.py file has the model architecture)
 
-model =  CNNBinaryClassifier()
+>>> model =  CNNBinaryClassifier()
 
-model.load_state_dict(torch.load('model/CNNPred.pth')
+>>> model.load_state_dict(torch.load('model/CNNPred.pth')
 
-model.eval()
->>> 
+>>> model.eval()
+
 ```
 ## 4. Final results
