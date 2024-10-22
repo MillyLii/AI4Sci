@@ -37,6 +37,8 @@ python
 
 For later use, run the following code to save the tensor:
 ```python
+python
+
 torch.save(tensor_promoter_train,'tensor_promoter_train_embedding.pt')
 torch.save(tensor_promoter_valid,'tensor_promoter_valid_embedding.pt')
 torch.save(tensor_promoter_test,'tensor_promoter_test_embedding.pt')
