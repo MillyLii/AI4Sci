@@ -12,7 +12,9 @@ pip install -r requirements.txt
 ```
 ## 2.Data Source
 ### 2.1 DNA Embedding
-During training, we used the large model hyena for DNA embedding. To get the embedding, run the following file:
+During training, we used the large model hyena for DNA embedding.
+
+To get the embedding, run the following file:
 
 *Please note that it is important to get the embedding before training, validating, and testing!*
 
