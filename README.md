@@ -2,7 +2,7 @@
 
 ## 1.Install
 ### 1.1 Requirements
-python >= 3.10.12; Pytorch == 2.4.1; CUDA = 12.1
+python >= 3.10.12; Pytorch == 2.4.1; CUDA = 12.1.
 
 ### 1.2 Quickstart
 ```
@@ -39,18 +39,18 @@ For later use, run the following code to save the tensor:
 ```python
 python
 
->>> torch.save(tensor_promoter_train,'tensor_promoter_train_embedding.pt')
->>> torch.save(tensor_promoter_valid,'tensor_promoter_valid_embedding.pt')
->>> torch.save(tensor_promoter_test,'tensor_promoter_test_embedding.pt')
+>>> torch.save(tensor_promoter_train,'tensor_promoter_train_embedding.pth')
+>>> torch.save(tensor_promoter_valid,'tensor_promoter_valid_embedding.pth')
+>>> torch.save(tensor_promoter_test,'tensor_promoter_test_embedding.pth')
 ```
 
 Hyena paper are accessed at:[Hyena Hierarchy:
- Towards Larger Convolutional Language Models](https://arxiv.org/pdf/2302.10866)
+ Towards Larger Convolutional Language Models](https://arxiv.org/pdf/2302.10866).
 
 ### 2.2 Gene TPMs data and Gene read counts data
-The data we downloaded from [GTEx Portal](https://www.gtexportal.org/home/)
+The data we downloaded from [GTEx Portal](https://www.gtexportal.org/home/).
 
-More specifically, we are downloading data related to EBV-transformed lymphocytes  from [GTEx Portal Downloads](https://www.gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression)
+More specifically, we are downloading data related to EBV-transformed lymphocytes  from [GTEx Portal Downloads](https://www.gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression).
 
 ## 3.Training
 ### 3.1 Train a predictive model using CNN
@@ -83,7 +83,7 @@ To use the model, please run(use CNN model as example):
 ```python
 python
 
-# Define the model before using it (the CNNPred.py file has the model architecture)
+# Define the model before using it (Detailed usage information is in the CNNtest.ipynb file)
 
 >>> model =  CNNBinaryClassifier()
 
@@ -93,3 +93,34 @@ python
 
 ```
 ## 4. Final results
+### 4.1 Validation set
+For CNN-based model, we get:
+*Accuracy*: 0.7988, 
+ *Precision*: 0.7543, 
+ *Recall*: 0.8869, 
+ *F1 Score*: 0.8152, 
+ *AUC*: 0.8662.
+
+For AE-XGB-based model, we get:
+*Accuracy*: 0.7735, 
+ *Precision*: 0.7505, 
+ *Recall*: 0.8202, 
+ *F1 Score*: 0.7838, 
+ *AUC*: 0.7735.
+
+For LSTM-based model, we get:
+*Accuracy*: 0.7270, 
+ *Precision*: 0.7202, 
+ *Recall*: 0.7434, 
+ *F1 Score*: 0.7316, 
+ *AUC*: 0.7861.
+
+### 4.2 Test set
+Since the CNN-based model performed best in the validation set, we only used CNN-based for prediction in the test set.
+
+For CNN-based model, we get:
+*Accuracy*: 0.8040, 
+ *Precision*: 0.7687, 
+ *Recall*: 0.8710, 
+ *F1 Score*: 0.8166, 
+ *AUC*: 0.8822.
