@@ -18,10 +18,10 @@ During training, we used the large model hyena for DNA embedding. To get the emb
 
 Once the embedding is obtained, the following code can be executed to obtain the tensor for use in the code:
 ```python
-embedding_promoter_train = np.load('data/embedding/sequence_hyena_train.npy')# 路径到时候改一下
+embedding_promoter_train = np.load('data/embedding/sequence_hyena_train.npy')
 tensor_promoter_train = torch.tensor(embedding_promoter_train)
 
-embedding_promoter_valid = np.load('data/embedding/sequence_hyena_valid.npy')# 路径改一下
+embedding_promoter_valid = np.load('data/embedding/sequence_hyena_valid.npy')
 tensor_promoter_valid = torch.tensor(embedding_promoter_valid)
 ```
 
