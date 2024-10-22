@@ -20,14 +20,14 @@ Once the embedding is obtained, the following code can be executed to obtain the
 ```python
 python
 
-import numpy as np
-import torch
+>>> import numpy as np
+>>> import torch
 
-embedding_promoter_train = np.load('data/embedding/sequence_hyena_train.npy')
-tensor_promoter_train = torch.tensor(embedding_promoter_train)
+>>> embedding_promoter_train = np.load('data/embedding/sequence_hyena_train.npy')
+>>> tensor_promoter_train = torch.tensor(embedding_promoter_train)
 
-embedding_promoter_valid = np.load('data/embedding/sequence_hyena_valid.npy')
-tensor_promoter_valid = torch.tensor(embedding_promoter_valid)
+>>> embedding_promoter_valid = np.load('data/embedding/sequence_hyena_valid.npy')
+>>> tensor_promoter_valid = torch.tensor(embedding_promoter_valid)
 ```
 
 Hyena paper are accessed at:[Hyena Hierarchy:
