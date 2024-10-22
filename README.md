@@ -39,9 +39,9 @@ For later use, run the following code to save the tensor:
 ```python
 python
 
->>> torch.save(tensor_promoter_train,'tensor_promoter_train_embedding.pth')
->>> torch.save(tensor_promoter_valid,'tensor_promoter_valid_embedding.pth')
->>> torch.save(tensor_promoter_test,'tensor_promoter_test_embedding.pth')
+>>> torch.save(tensor_promoter_train,'tensor/tensor_promoter_train_embedding.pth')
+>>> torch.save(tensor_promoter_valid,'tensor/tensor_promoter_valid_embedding.pth')
+>>> torch.save(tensor_promoter_test,'tesnor/tensor_promoter_test_embedding.pth')
 ```
 
 Hyena paper are accessed at:[Hyena Hierarchy:
@@ -56,26 +56,26 @@ More specifically, we are downloading data related to EBV-transformed lymphocyte
 ### 3.1 Train a predictive model using CNN
 To train a CNN-based predictive model, please run:
 ```
-python CNNPred.py
+python code/CNNPred.py
 ```
 ### 3.2 Train a predictive model using LSTM
 To train a LSTM-based predictive model, please run:
 ```
-python LSTMPred.py
+python code/LSTMPred.py
 ```
 ### 3.3 Train a predictive model using AutoEncoder and XGBoost
 To train AE-XGB-based predictive model, please run:
 ```
-python AEXGBPred.py
+python code/AEXGBPred.py
 ```
 ### 3.4 Train a predictive model using extra features
 using Gene read counts as extra feature, please run:
 ```
-python CNNWithReadCountsPred.py
+python code/CNNWithReadCountsPred.py
 ```
 using Gene TPMs as extra feature, please run:
 ```
-python CNNWithTPMPred.py
+python code/CNNWithTPMPred.py
 ```
 ### 3.5 using ready-made trained models
 If you don't train, we also provide ready-made trained models, just load the model and use it!
@@ -101,6 +101,20 @@ For CNN-based model, we get:
  *F1 Score*: 0.8152, 
  *AUC*: 0.8662.
 
+For CNN-based model with extra feature Gene TPMs, we get:
+*Accuracy*: 0.8528, 
+ *Precision*: 0.8937, 
+ *Recall*: 0.8012, 
+ *F1 Score*: 0.8449, 
+ *AUC*: 0.9185.
+
+For CNN-based model with extra feature Gene Read Counts, we get:
+*Accuracy*: 0.8497, 
+ *Precision*: 0.8443, 
+ *Recall*: 0.8580, 
+ *F1 Score*: 0.8511, 
+ *AUC*: 0.9160.
+
 For AE-XGB-based model, we get:
 *Accuracy*: 0.7735, 
  *Precision*: 0.7505, 
@@ -116,11 +130,30 @@ For LSTM-based model, we get:
  *AUC*: 0.7861.
 
 ### 4.2 Test set
-Since the CNN-based model performed best in the validation set, we only used CNN-based for prediction in the test set.
-
 For CNN-based model, we get:
 *Accuracy*: 0.8040, 
  *Precision*: 0.7687, 
  *Recall*: 0.8710, 
  *F1 Score*: 0.8166, 
  *AUC*: 0.8822.
+
+ For CNN-based model with extra feature Gene TPMs, we get:
+ *Accuracy*: 0.8589, 
+ *Precision*: 0.9129, 
+ *Recall*: 0.7935, 
+ *F1 Score*: 0.8490, 
+ *AUC*: 0.9238.
+
+For CNN-based model with extra feature Gene Read Counts, we get:
+*Accuracy*: 0.8763, 
+ *Precision*: 0.8817, 
+ *Recall*: 0.8691, 
+ *F1 Score*: 0.8754, 
+ *AUC*: 0.9203.
+ 
+For LSTM-based model, we get:
+*Accuracy*: 0.7485, 
+ *Precision*: 0.7426, 
+ *Recall*: 0.7621, 
+ *F1 Score*: 0.7522, 
+ *AUC*: 0.8233.
