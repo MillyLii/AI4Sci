@@ -30,6 +30,9 @@ python
 
 >>> embedding_promoter_valid = np.load('data/embedding/sequence_hyena_valid.npy')
 >>> tensor_promoter_valid = torch.tensor(embedding_promoter_valid)
+
+>>> embedding_promoter_test = np.load('data/embedding/sequence_hyena_test.npy')
+>>> tensor_promoter_test = torch.tensor(embedding_promoter_test)
 ```
 
 Hyena paper are accessed at:[Hyena Hierarchy:
