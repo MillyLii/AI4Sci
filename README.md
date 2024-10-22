@@ -20,6 +20,6 @@ Hyena paper are accessed at:[Hyena Hierarchy:
 ### 2.2 Gene TPMs data and Gene read counts data
 The data we downloaded from [GTEx Portal](https://www.gtexportal.org/home/)
 
-More specifically, we downloaded EBV-transformed lymphocytes from [GTEx Portal Downloads](https://www.gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression)
+More specifically, we are downloading data related to EBV-transformed lymphocytes  from [GTEx Portal Downloads](https://www.gtexportal.org/home/downloads/adult-gtex/bulk_tissue_expression)
 
 ## 3.Final result
