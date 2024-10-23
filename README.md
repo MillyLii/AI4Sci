@@ -87,7 +87,7 @@ python
 
 >>> model =  CNNBinaryClassifier()
 
->>> model.load_state_dict(torch.load('model/CNNPred.pth')
+>>> model.load_state_dict(torch.load('../model/CNNPred.pth')
 
 >>> model.eval()
 
@@ -116,11 +116,11 @@ For CNN-based model with extra feature Gene Read Counts, we get:
  *AUC*: 0.9160.
 
 For AE-XGB-based model, we get:
-*Accuracy*: 0.7735, 
- *Precision*: 0.7505, 
- *Recall*: 0.8202, 
- *F1 Score*: 0.7838, 
- *AUC*: 0.7735.
+*Accuracy*: 0.7755, 
+ *Precision*: 0.7442, 
+ *Recall*: 0.8404, 
+ *F1 Score*: 0.7894, 
+ *AUC*: 0.7755.
 
 For LSTM-based model, we get:
 *Accuracy*: 0.7270, 
@@ -150,6 +150,13 @@ For CNN-based model with extra feature Gene Read Counts, we get:
  *Recall*: 0.8691, 
  *F1 Score*: 0.8754, 
  *AUC*: 0.9203.
+
+ For AE-XGB-based model, we get:
+*Accuracy*: 0.7667, 
+ *Precision*: 0.7405, 
+ *Recall*: 0.8226, 
+ *F1 Score*: 0.7794, 
+ *AUC*: 0.7666.
  
 For LSTM-based model, we get:
 *Accuracy*: 0.7485, 
