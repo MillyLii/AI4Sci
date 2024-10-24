@@ -123,10 +123,10 @@ For AE-XGB-based model, we get:
  *AUC*: 0.7755.
 
 For LSTM-based model, we get:
-*Accuracy*: 0.7270, 
- *Precision*: 0.7202, 
- *Recall*: 0.7434, 
- *F1 Score*: 0.7316, 
+*Accuracy*: 0.7310, 
+ *Precision*: 0.7148, 
+ *Recall*: 0.7697, 
+ *F1 Score*: 0.7412, 
  *AUC*: 0.7861.
 
 ### 4.2 Test set
