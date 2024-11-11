@@ -15,7 +15,10 @@ pip install -r requirements.txt
 ### 2.1 DNA Embedding
 During training, we used the large model hyena for DNA embedding.
 
-To get the embedding, run the following file: code/inference.py.
+To get the embedding, run the following file: 
+```
+python code/inference.py.
+```
 
 **NOTE**: The file path needs to be changed each time an embedding is performed.
 
