@@ -11,9 +11,6 @@ conda activate AIDNA
 pip install -r requirements.txt
 ```
 
-### 1.3 Important Note
-**Our model files are under the branch named master, not in this branch**
-
 ## 2.Data Source
 ### 2.1 DNA Embedding
 During training, we used the large model hyena for DNA embedding.
